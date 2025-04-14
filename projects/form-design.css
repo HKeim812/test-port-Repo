@@ -1,0 +1,65 @@
+*{
+    font-family:Verdana;
+  }
+  
+  /* Body and form div */
+  
+  .form-title{
+    color:Bisque;
+  }
+  
+  body{
+    height:100vh;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( rgba(255, 180, 173,20%), rgba(210, 180, 173,1));
+    align-content:center;
+  }
+  
+  .form-container{
+    background-color: rosybrown;
+    padding: 10%;
+    width:75%;
+    margin: auto;
+    border-radius:10%;
+  }
+  
+  /* Inputs */
+  label{
+    margin:1px;
+    color: linen;
+  }
+  
+  input, textarea{
+    width: 85%;
+    padding:3px;
+    margin-bottom:5px;
+    display:block;
+  }
+  
+  input:focus, textarea:focus {
+    background-color: blanchedalmond;
+  }
+  
+  /* Button styles */
+  
+  .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button{
+    background-color:bisque;
+    font-size: 1rem;
+    border-radius:10%;
+    padding:4px;
+    font-family:arial;
+    margin-top:15px;
+    width:40%;
+    transition: width 1s;
+  }
+  
+  button:hover{
+    background-color:AntiqueWhite;
+    width:45%;
+  }
