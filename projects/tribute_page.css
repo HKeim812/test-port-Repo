@@ -1,0 +1,63 @@
+img{
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+
+  *{
+    font-family: Helvetica;
+  }
+  
+  #title {
+    text-align: center;
+  }
+  
+  a {
+    color: royalblue;
+  }
+  
+  a:visited {
+    color: purple;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  #img-caption{
+      text-align: center;
+      text-shadow: 1px 1px blue;
+      font-family:Copperplate;
+      font-size: 4rem;
+  }
+  
+  html{
+    background-image: url("../assets/sponge_sky.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #tribute-info{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    color: #333;
+    width: 60%;
+  }
+
+  ul{
+    list-style: circle inside none;
+  }
