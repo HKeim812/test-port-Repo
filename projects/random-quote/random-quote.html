@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="random-quote.css" />
+    <title>Random Quote Generator</title>
+    <script src="random-quote.js" defer></script>
+  </head>
+  <body>
+    <h1>Random Quote Generator</h1>
+    <div id="quote-container">
+      <section id="quote-box" class="active">
+        <p id="text">"The greatest glory in living lies not in never falling, but in rising every time we fall."</p>
+        <p id="author">Nelson Mandela</p>
+      </section>
+      <section id="quote-box">
+        <p id="text">"The only limit to our realization of tomorrow will be our doubts of today."</p>
+        <p id="author">Franklin D. Roosevelt</p>
+      </section>
+      <section id="quote-box">
+        <p id="text">"In the end, we will remember not the words of our enemies, but the silence of our friends."</p>
+        <p id="author">Martin Luther King Jr.</p>
+      </section>
+      <section id="quote-box">
+        <p id="text">"The future belongs to those who believe in the beauty of their dreams."</p>
+        <p id="author">Eleanor Roosevelt</p>
+      </section>
+      <section id="quote-box">
+        <p id="text">"The best way to predict the future is to create it."</p>
+        <p id="author">Peter Drucker</p>
+      </section>
+      <section id="quote-box" class="tooFast">
+        <p id="text">Chill out. Quit clicking so fast. Have some patience.</p>
+      </section>
+    </div>
+    <button id="new-quote" onclick="newQuote()" ondblclick="tooFast()">New Quote</button>
+    
+  </body>

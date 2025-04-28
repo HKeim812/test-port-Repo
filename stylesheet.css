@@ -14,7 +14,7 @@
     }
 
 
-    /* Link formating */
+    /* Link formatting */
     a {
       color: #2980b9;
       text-decoration: none;
@@ -30,7 +30,7 @@
     }
     
 
-    /* Nav Formating */
+    /* Nav Formatting */
     .nav{
         height: 3.2rem;
         display: flex;
@@ -180,3 +180,47 @@
             transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
         }
     }
+
+/* Projects */
+.projects-container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 27%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-link {
+    text-decoration: none;
+    color: floralwhite;
+    font-weight: bold;
+    background-color: gray;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.project-link:hover {
+    background-color: darkgrey;
+    text-decoration: none;
+    color: white;
+    box-shadow: gray 1px 1px 10px;
+    transition: all ease-in-out 0.4s;
+}
+
+.project-title{
+    margin-bottom: 10px;
+}
