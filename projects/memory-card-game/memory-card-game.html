@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <script src="memory-card-game.js"></script>
+    <link rel="stylesheet" href="memory-card-game.css">
+</head>
+<body>
+    <div class="title-instruct">
+        <h1 class="game-title">Memory Card Game</h1>
+        <h3 class="game-instructions">Would you like to play a game of memory? Select the difficulty and try to find all the matching pairs of cards!</h3>
+    </div>
+    <div class="difficulty-selection">
+        <label for="difficulty">Select Difficulty:</label>
+        <select id="difficulty">
+            <option value="select">-</option>
+            <option value="3">Easy</option>
+            <option value="6">Medium</option>
+            <option value="12">Hard</option>
+        </select>
+    </div>
+    <div id="game-board" class="game-board">
+         <div id="1" class="match">
+            <div id="game-card" class="game-card">
+                <div id="card-front"></div>
+                <div id="card-back x"></div>
+            </div>
+            <div id="game-card" class="game-card">
+                <div id="card-front"></div>
+                <div id="card-back x"></div>
+            </div>
+         </div>
+         <div id="2" class="match">
+            <div id="game-card" class="game-card">
+                <div id="card-front"></div>
+                <div id="card-back x"></div>
+            </div>
+            <div id="game-card" class="game-card">
+                <div id="card-front"></div>
+                <div id="card-back x"></div>
+            </div>
+         </div>
+         <div id="3" class="match">
+            <div id="game-card" class="game-card">
+                <div id="card-front"></div>
+                <div id="card-back x"></div>
+            </div>
+            <div id="game-card" class="game-card">
+                <div id="card-front"></div>
+                <div id="card-back x"></div>
+            </div>
+         </div>
+    </div>
+    <div id="game-status" class="game-status">
+        <p id="matches">Matches: <span id="matches-num">0</span></p>
+        <p id="time">Time Taken: <span id="time-taken">0s</span></p>
+    </div>
+    <button id="restart-game" class="restart-game">Restart Game</button>
+</body>
+</html>

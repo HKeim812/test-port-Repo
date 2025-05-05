@@ -1,0 +1,94 @@
+@import url("https://fonts.google.com/specimen/Bebas+Neue");
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  background-color:floralwhite;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.title-instruct {
+  text-align: center;
+  margin: 20px;
+  background-color: rgb(210, 210, 210);
+}
+
+/* Difficulty selection */
+.difficulty-selection {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+label {
+  margin: 0 10px;
+  font-size: xx-large;
+}
+
+select {
+    list-style: none;
+    min-width: 40px;
+    width: 14%;
+}
+
+/* Game Status */
+.game-status {
+  display: none;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 0 20%;
+  font-size: xx-large;
+}
+
+/* Reset Button */
+button {
+  background-color: gray;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: darkgray;
+}
+
+/* Game Cards */
+.game-board {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 90vw;
+  height: 70vh;
+  background-color: lightblue;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.game-card {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 6%;
+  margin: 10px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#card-front {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe-Fv9dVHeWhKNkaCrRONPrJfMEFfl9rPHhw&s");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
