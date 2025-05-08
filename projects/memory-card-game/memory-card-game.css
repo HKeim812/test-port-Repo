@@ -15,22 +15,22 @@ body {
 }
 
 /* Difficulty selection */
-.difficulty-selection {
+/* .difficulty-selection {
   display: flex;
   justify-content: center;
   margin: 20px;
-}
+} */
 
-label {
+/* label {
   margin: 0 10px;
   font-size: xx-large;
-}
+} */
 
-select {
+/* select {
     list-style: none;
     min-width: 40px;
     width: 14%;
-}
+} */
 
 /* Game Status */
 .game-status {
@@ -75,20 +75,36 @@ button:hover {
 
 .game-card {
   cursor: pointer;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 10px;
-  padding: 6%;
   margin: 10px;
   height: 200px;
   border-radius: 10px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
 }
 
 #card-front {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe-Fv9dVHeWhKNkaCrRONPrJfMEFfl9rPHhw&s");
+    background-color: aqua;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+#card-back {
+    background-color: #333;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
 
+.game-card.flipped .card-front {
+  transform: rotateY(180deg);
+}
 
