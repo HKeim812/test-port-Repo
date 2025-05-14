@@ -1,12 +1,10 @@
 const card = document.querySelector(".game-card");
+const cardBack = document.querySelector(".card-back");
+const cardFront = document.querySelector(".card-front");
 
-let firstCard = null;
-let secondCard = null;
-let lockBoard = false;
-
-card.addEventListener('click', flipCard);
+card.addEventListener("click", flipCard());
 
 function flipCard() {
-  this.classList.add('flipped');
+  console.log("flipped");
 }
 

@@ -82,6 +82,7 @@ button:hover {
   border-radius: 10px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
+  transition: transform 0.5s;
 }
 
 #card-front {
@@ -92,7 +93,6 @@ button:hover {
     height: 100%;
     width: 100%;
     transition: transform 0.5s;
-    transform-style: preserve-3d;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -104,7 +104,6 @@ button:hover {
     border-radius: 10px;
 }
 
-.game-card.flipped .card-front {
+.game-card.flipped {
   transform: rotateY(180deg);
 }
-
