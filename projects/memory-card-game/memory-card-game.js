@@ -1,10 +1,31 @@
-const card = document.querySelector(".game-card");
-const cardBack = document.querySelector(".card-back");
-const cardFront = document.querySelector(".card-front");
+// Function to flip the cards on the click
+const cards = document.querySelectorAll(".game-card");
 
-card.addEventListener("click", flipCard());
+cards.forEach(card => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipped");
+  });
+});
 
-function flipCard() {
-  console.log("flipped");
+
+// Function to shuffle the cards
+function shuffleCards() {
+  const cardList = [...document.querySelectorAll(".game-card")];
+  cardList.sort(() => Math.random() - 0.5);
+  const gameBoard = document.querySelector(".game-board");
+  gameBoard.innerHTML = "";
+  cardList.forEach(card => gameBoard.appendChild(card));
+}
+
+// Shuffle the cards on page load
+shuffleCards();
+
+// Function to reset the game
+function resetGame() {
+  const cardList = [...document.querySelectorAll(".game-card")];
+  cardList.forEach(card => {
+    card.classList.remove("flipped");
+  });
+  shuffleCards();
 }
 
