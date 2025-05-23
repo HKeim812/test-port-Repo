@@ -194,10 +194,9 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    width: 27%;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 20%;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -223,4 +222,8 @@
 
 .project-title{
     margin-bottom: 10px;
+}
+
+.projects-opener{
+    text-align: center;
 }
