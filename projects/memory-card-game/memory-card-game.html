@@ -11,59 +11,135 @@
         <h1 class="game-title">Memory Card Game</h1>
         <h3 class="game-instructions">Would you like to play a game of memory? Select the difficulty and try to find all the matching pairs of cards!</h3>
     </div>
-    <!-- <div class="difficulty-selection">
+    <div class="difficulty-selection">
         <label for="difficulty">Select Difficulty:</label>
-        <select id="difficulty">
+        <select id="difficulty" required>
             <option value="select">-</option>
-            <option value="3">Easy</option>
-            <option value="6">Medium</option>
-            <option value="12">Hard</option>
+            <option value="6">Easy</option>
+            <option value="12">Medium</option>
+            <option value="18">Hard</option>
         </select>
-    </div> -->
-    <div id="game-board" class="game-board">
-        <div class="game-card match1" data-match="match1" id="card-1">
-            <div class="card-inner">
-              <div class="card-front"></div>
-              <div class="card-back"></div>
-            </div>
-        </div>
-        <div class="game-card match1" data-match="match1" id="card-2">
-            <div class="card-inner">
-              <div class="card-front"></div>
-              <div class="card-back"></div>
-            </div>
-        </div>
-        <div class="game-card match2" data-match="match2" id="card-3">
-            <div class="card-inner">
-              <div class="card-front"></div>
-              <div class="card-back"></div>
-            </div>
-        </div>
-        <div class="game-card match2" data-match="match2" id="card-4">
-            <div class="card-inner">
-              <div class="card-front"></div>
-              <div class="card-back"></div>
-            </div>
-        </div>
-        <div class="game-card match3" data-match="match3" id="card-5">
-            <div class="card-inner">
-              <div class="card-front"></div>
-              <div class="card-back"></div>
-            </div>
-        </div>
-        <div class="game-card match3" data-match="match3" id="card-6">
-            <div class="card-inner">
-              <div class="card-front"></div>
-              <div class="card-back"></div>
-            </div>
-        </div>
-
     </div>
-    <div id="game-status" class="game-status">
+    <button id="play-game" class="play-game" onclick="startGame()">Start Game</button>
+
+    <div id="game-board" class="game-board hidden">
+        <!-- Easy -->
+        <div class="game-card match1 easy" data-match="match1" id="card-1">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match1 easy" data-match="match1" id="card-2">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match2 easy" data-match="match2" id="card-3">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match2 easy" data-match="match2" id="card-4">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match3 easy" data-match="match3" id="card-5">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match3 easy" data-match="match3" id="card-6">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <!-- Medium -->
+        <div class="game-card match4 medium" data-match="match4" id="card-7">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match4 medium" data-match="match4" id="card-8">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match5 medium" data-match="match5" id="card-9">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match5 medium" data-match="match5" id="card-10">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match6 medium" data-match="match6" id="card-11">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match6 medium" data-match="match6" id="card-12">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <!-- Hard -->
+        <div class="game-card match7 hard" data-match="match7" id="card-13">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match7 hard" data-match="match7" id="card-14">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match8 hard" data-match="match8" id="card-15">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match8 hard" data-match="match8" id="card-16">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match9 hard" data-match="match9" id="card-17">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+        <div class="game-card match9 hard" data-match="match9" id="card-18">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back"></div>
+            </div>
+        </div>
+    </div>
+    <div id="game-status" class="game-status hidden">
         <p id="matches">Matches: <span id="matches-num">0</span></p>
         <p id="time">Time Taken: <span id="time-taken">0s</span></p>
     </div>
-    <button id="restart-game" class="restart-game" onclick="resetGame()">Restart Game</button>
+    <button id="restart-game" class="restart-game hidden" onclick="resetGame()">Restart Game</button>
     <script src="memory-card-game.js"></script>
 </body>
 </html>

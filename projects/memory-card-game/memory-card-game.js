@@ -64,4 +64,35 @@ function resetGame() {
   shuffleCards();
   flippedCards = [];
   lockBoard = false;
+  document.querySelector(".game-board").classList.add("hidden");
+  document.querySelector(".restart-game").classList.add("hidden");
+  document.querySelector(".difficulty-selection").classList.remove("hidden");
+  document.querySelector(".play-game").classList.remove("hidden");
+  document.querySelector(".difficulty-selection").value == "select";
+}
+
+// Funstion to start the game - WIP
+function startGame() {
+  document.querySelector(".game-board").classList.remove("hidden");
+  document.querySelector(".restart-game").classList.remove("hidden");
+  document.querySelector(".difficulty-selection").classList.add("hidden");
+  document.querySelector(".play-game").classList.add("hidden");
+  document.querySelectorAll(".game-card").classList.add("hidden");
+  const easyCards = document.querySelectorAll(".game-card.easy");
+  const mediumCards = document.querySelectorAll(".game-card.medium");
+  const hardCards = document.querySelectorAll(".game-card.hard");
+  const value = document.getElementById("difficulty").value;
+  if (value === "easy") {
+    easyCards.forEach(card => card.classList.remove("hidden"));
+  } else if (value === "medium") {
+    easyCards.forEach(card => card.classList.remove("hidden"));
+    mediumCards.forEach(card => card.classList.remove("hidden"));
+  } else if (value === "hard") {
+    easyCards.forEach(card => card.classList.remove("hidden"));
+    mediumCards.forEach(card => card.classList.remove("hidden"));
+    hardCards.forEach(card => card.classList.remove("hidden"));
+  } else {
+    alert("Please select a difficulty level.");
+    return;
+  }
 }

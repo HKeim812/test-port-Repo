@@ -14,23 +14,23 @@ body {
   background-color: rgb(210, 210, 210);
 }
 
-/* Difficulty selection */
-/* .difficulty-selection {
+Difficulty selection 
+.difficulty-selection {
   display: flex;
   justify-content: center;
   margin: 20px;
-} */
+}
 
-/* label {
+label {
   margin: 0 10px;
   font-size: xx-large;
-} */
+}
 
-/* select {
+select {
     list-style: none;
     min-width: 40px;
     width: 14%;
-} */
+}
 
 /* Game Status */
 .game-status {
@@ -127,6 +127,51 @@ button:hover {
   background-position: center;
 }
 
+/* MEDIUM */
+.game-card.match4 .card-back {
+  background-image: url("https://picsum.photos/id/222/350/300");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game-card.match5 .card-back {
+  background-image: url("https://picsum.photos/id/72/350/300");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game-card.match6 .card-back {
+  background-image: url("https://picsum.photos/id/129/350/300");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* HARD */
+
+.game-card.match7 .card-back {
+  background-image: url("https://picsum.photos/id/12/350/300");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game-card.match8 .card-back {
+  background-image: url("https://picsum.photos/id/19/350/300");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game-card.match9 .card-back {
+  background-image: url("https://picsum.photos/id/29/350/300");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .game-card.matched .card-inner {
   transform: rotateY(180deg);
+}
+
+/* Start game */
+.hidden {
+  display: none;
 }
