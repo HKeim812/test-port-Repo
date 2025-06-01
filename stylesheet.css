@@ -6,11 +6,16 @@
       color: #333;
       margin: 0 auto;
       padding: 20px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      font-style: normal;
     }
     
     .title {
       text-align: center;
       color: #2c3e50;
+      font-family: "Gravitas One", serif;
+      font-weight: 100;
     }
 
 
@@ -42,6 +47,7 @@
     .nav__logo{
         font-size: 1.5rem;
         margin: auto 1rem;
+        
     }
 
     .nav__menu ul{
@@ -90,8 +96,12 @@
         padding: 10px;
         border-radius: 5px;
         margin-bottom: 22px;
-        width: 12%;
+        width: 15%;
         margin: 0 auto;
+    }
+
+    .intro-code:hover {
+        background-color: lightgrey;
     }
       
     .about-me {
@@ -210,14 +220,26 @@
     display: inline-block;
     margin-top: 10px;
     border-radius: 5px;
+    transition: all ease-in-out 0.4s;
 }
 
 .project-link:hover {
-    background-color: darkgrey;
+    background-color: darkgray;
     text-decoration: none;
-    color: white;
-    box-shadow: gray 1px 1px 10px;
+    color: floralwhite;
+    box-shadow: .3em 0.3em 1em rgba(0, 0, 0, 0.2);
     transition: all ease-in-out 0.4s;
+}
+
+.wip{
+    cursor: not-allowed;
+    font-size: .75rem;
+    width: 60%;
+}
+
+.wip:hover{
+    background-color: lightcoral;
+    box-shadow: .3em 0.3em 1em rgb(200 0 0 / 60%);
 }
 
 .project-title{
@@ -226,4 +248,21 @@
 
 .projects-opener{
     text-align: center;
+}
+
+
+.icons{
+    color: #2980b9;
+    font-size: 1.7rem;
+}
+
+.fa-brands:hover{
+    color: #3498db;
+    font-size: 1.8rem;
+    transition: all ease-in-out 0.4s;
+}
+.fa-solid:hover{
+    color: #3498db;
+    font-size: 1.8rem;
+    transition: all ease-in-out 0.4s;
 }

@@ -23,3 +23,5 @@ function closeMenu() {
         hamburger.classList.remove("active");
     })
 };
+
+
